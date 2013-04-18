@@ -1,0 +1,169 @@
+\documentclass[11pt,a4paper,ngerman]{article}
+\usepackage[utf8]{inputenc} 
+\usepackage[ngerman]{babel}
+%
+%\usepackage{fancyref}
+\usepackage{fancyhdr} 
+\usepackage{color}
+%\usepackage{url}
+%\usepackage{listings}
+\usepackage{longtable} 
+
+
+
+
+%
+% PDF settings
+%\usepackage[pdftex]{graphicx}
+
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkred}{rgb}{0.3,0,0}
+\usepackage[pdfstartview=FitH,pdftitle={Mate-Verkostung},pdfauthor={JanilaRuck}, 
+    bookmarks=true,colorlinks=true,linkcolor=darkred,urlcolor=darkblue]{hyperref}
+
+%
+% Header and Footer Style
+%
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[R]{\slshape Mate--Verkostung}
+\fancyhead[L]{\slshape\nouppercase{\rightmark}}
+\fancyfoot{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}} 
+
+% No identation
+\setlength\headheight{15pt}
+\setlength\parindent{0pt} 
+%
+% Custom commands
+\newcommand{\mailto}[1]{\href{mailto:#1}{#1}}
+%
+%
+% Titel and author 
+\title{
+{\normalsize Forschungsarbeit an der Hey--ich--hab--da--mal--ne--Idee--Universität\\
+Berlin, Arbeitsgruppe Komm--wir--erforschen--das--bei--uns--zu--Hause}\\[6ex] 
+\textbf{Die Mate--Verkostung}\\
+\normalsize{Wir vergleichen neun Mate--haltige Erfrischungsgetränke im Blindtest}}
+
+\author{Janila Ruck u.v.m.\\
+{\normalsize Matrikelnummer: 1337}\\
+%{\normalsize \mailto{example@mail.de}}\\\\
+{\normalsize Betreuer: Wenn du das gerade liest, dann wohl DU!}\\
+{\normalsize Eingereicht bei: dem Internet}}
+
+\date{Berlin, 18.April 2013}
+
+
+\begin{document}
+\begin{titlepage}
+\pagenumbering{alph}
+\maketitle
+\thispagestyle{empty}
+
+\vfill{}
+
+\begin{abstract}
+Inhalt der Zusammenfassung: Das untersuchte "`Problem"' (wenn möglich in einem Satz). Die aufgestellten Hypothesen (in Kurzform). Teilnehmer (Anzahl). Untersuchungsmethode (ganz kurz beschreiben, was gemacht wurde). Elementare Ergebnisse (mit Signifikanz). Interpretation und Anwendbarkeit der Ergebnisse (Hypothese bestätigt? Konsequenzen?). Also mindestens ein Satz zu jedem Abschnitt des Berichtes: Einleitung, Methode, Ergebnisse, Diskussion.
+\end{abstract}
+%\begin{keywords} Mate, Club--Mate, Hackerbrause, Blindtest \end{keywords}
+\end{titlepage}
+
+\pagestyle{empty}
+\clearpage\pagenumbering{roman}
+
+
+\tableofcontents
+
+\clearpage\pagenumbering{arabic}
+\pagestyle{fancy}
+\setcounter{page}{1}
+ 
+
+
+\section{Einleitung}\label{sec:einleitung}
+Der Mate--Strauch (\textit{Ilex paraguariensis} A.St.-Hil, auch: \textit{Ilex paraguensis} D.Don und \textit{Ilex paraguayensis} Hook.), auch Mate--Baum genannt, ist eine Pflanzenart aus der Gattung der Stechpalmen (Ilex) in der Familie der Stechpalmengewächse (Aquifoliaceae). Die Heimat der Pflanze liegt in Südamerika. Mate ist ebenfalls die Bezeichnung für ein in Südamerika weit verbreitetes Aufgussgetränk, das durch Aufguss kleingeschnittener trockener Blätter des Ilex paraguayensis gewonnen wird.\footnote{sagt jedenfalls \href{http://de.wikipedia.org/wiki/Mate}{Wikipedia}!}
+
+In Deutschland werden heutzutage mit Mate vor allem die Erfrischungsgetränke bezeichnet, die mit einem Mate--Aromaextrakt hergesatellt werden. Am bekanntesten ist hierbei sicherlich der Marktführer "`Club Mate"', der seit 1924 von der Brauerei Loscher KG aus Münchsteinach hergestellt wird (bis in die 50er Jahre unter dem Namen Sekt--Bronte). Inzwischen gibt es jedoch zahlreiche weitere Sorten auf dem deutschen Markt. Diese unterscheiden sich im Koffein- und Zuckergehalt, bzw. allgemein im (in der Regel nicht öffentlichen) Rezept.\footnote{weiß ich}
+
+Bei unterschiedlichen Rezepten ist ein unterschiedliches Geschmackserlebnis zu erwarten, in der entsprechenden "`Szene"' werden auch durchaus starke Präferenzen für oder gegen bestimmte Sorten geäußert -- es ist jedoch zu vermuten, dass diese auch stark von sekundären Kriterien abhängen, wie zum Beispiel ob eine bestimmte Sorte gerade "`in"' oder schon wieder "`zu sehr Mainstream"' ist.  Auch Sympathien für die Brauerei, die Herstellungsideologie oder das Design der Flasche können hier eine Rolle spielen. \footnote{das habe ich mir so gedacht}
+
+\paragraph{Aktueller Forschungsstand}
+Es gibt zwar einige Stellen, die zahlreiche verschiedene Mate--Sorten testen, etwa \href{http://hacker.brau.se/}{hacker.brau.se} oder \href{http://wirprobieren.com/}{wirprobieren.com/} (bzw. \href{https://www.youtube.com/user/TACKLEMANIAde}{youtube.com/user/TACKLEMANIAde}). Hier wird jedoch jeweils nur eine Sorte auf einmal getestet und es steht das gesamte Produkt in der Bewertung. Im Gegensatz dazu fehlt es meines Wissens bisher völlig an Untersuchungen, die im \textbf{direkten Vergleich} Mate--Sorten ausschließlich auf ihren \textbf{Geschmack} hin untersuchen. Dieser traurige Zustand wird hiermit beendet.
+
+\paragraph{Fragestellungen}
+Wie unterschiedlich schmecken die Mate--Sorten im direkten Vergleich? Lässt sich überhaupt ein relevanter Unterschied feststellen? Bestätigen sich die vorher bestehenden Präferenzen, oder werden diese als Vorurteile widerlegt?
+
+
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Die untersuchten Mate--Sorten}
+In der Verkostung wurden untersucht:
+\begin{itemize}
+ \item \href{http://www.voelkeljuice.de/sortiment/title/biozisch-mate/}{BioZisch Mate} von Voelkel aus Höhbeck (Niedersachsen)
+ \item \href{http://www.buenos-icetea.com/buenos-mate/}{Buenos Mate} der Buenos GmbH aus Bad Homburg vor der Höhe (Hessen)
+ \item \href{http://www.clubmate.de/}{Club--Mate} der BrauereiLoscher aus Münchsteinach (Bayern)
+ \item \href{http://www.flora-power.de/}{FloraPower} von Reinecke Getränke aus Hamburg
+ \item \href{http://kolle-mate.de/http://kolle-mate.de/}{Kolle--Mate} der zickzack GmbH aus Dresden (Sachsen)
+ \item \href{http://leetmate.de/}{LeetMate} (oder 1337MATE)\footnote{In den Anfängen von 1337MATE (2010) kam es immer wieder vor, dass Getränkehändler uns nicht verkauften, als sie nach 1337MATE (Gesprochen LiedMate) gefragt wurden. Sie hatten schließlich nur Eins-Drei-Drei-Sieben-Mate im Regal.
+Wir mussten uns damit abfinden, dass wir uns in einem durchaus alten Gewerbe bewegen und kamen zu dem Schluss, dass wir 1337MATE auf einigen Etiketten also in Zukunft ausschreiben werden, damit für alle klar erkennbar ist worum es geht. Um 1337MATE nämlich ;-) Quelle: \href{http://leetmate.de/1337-oder-leet/}{leetmate.de/1337-oder-leet/} }  von der 1337 und so GmbH aus Hamburg
+ \item \href{http://www.vivaris.net/#c17}{MioMio Mate} von Vivaris aus Haselünne (Niedersachsen)
+ \item \href{http://www.top-mate.de/}{TopMate} der GetränkeIdee* KG aus Verl (Nordrhein-Westfalen)
+ \item \href{http://www.husumer-mineralbrunnen.de/produkte/rio-mate/}{Rio Mate} von Husumer Mineralbrunnen aus Husum  (Schleswig-Holstein)
+\end{itemize}
+
+\subsection{Auswahl der Sorten}
+Das Ziel war es, eine möglichst große Auswahl an Mate--Sorten zu testen. Der Autorin war für sechs Sorten eine Bezugsquelle in Berlin erkannt. Auf diese hohe Zahl kommt es durch drei in der Nähe des Universitätsstandortes Adlershof im Kaufland geführte Mate--Sorten (Club, Buenos und MioMio) sowie den Bierhändler \href{http://www.ambrosetti.de/}{Ambrosetti} gegenüber vom ehemaligen Kindergarten der Autorin, welche FloraPower und 1337Mate führt. Beim Einkauf im Bioladen zusammen mit dem Vater der Autorin entdeckte diese zusätzlich noch BioZisch Mate und damit sah die Autorin eine genügend große Stichprobe für die Durchführung des Experiments gegeben und erstellte ein Facebookevent (siehe Abschnitt \ref{sec:stichprobe})
+
+Durch die \href{http://www.matekarte.de/}{matekarte} wurde die Autorin noch zusätzlich auf die Verfügbarkeit von TopMate aufmerksam und zwei der Gäste brachten auf eigene Initiative noch je eine weitere Sorte mit: Rio Mate und Kolle Mate. Die Verfügbarkeit letzterer ist besonders erwähnenswert, da kolle-mate in Berlin nicht erhältlich ist. Einer der Versuchspersonen hatte den Hersteller zickzack GmbH angeschrieben und um die Zusendung einiger Flaschen gebeten. Diese erfolgte auch und zwar kostenfrei, lediglich mit der Bitte um eine Rückmeldung zum Geschmack ihrer Brause.\footnote{Dafür echt noch mal ein fettes Danke! Das war so cool von euch! :)\footnotemark}\footnotetext{hat unsere Neutralität in der Bewertung aber natürlich nicht beeinflusst}
+
+\subsection{objektive Unterscheidungskriterien}
+
+
+\subsection{weitere Kriterien}
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Versuchsdesign}
+
+
+\subsection{Stichprobe}\label{sec:stichprobe}
+Hier sind Angaben zur Anzahl der Versuchspersonen, Geschlechterverhältnis, Muttersprache, Alter (\textit{M} und \textit{SD}), Studienfach und Belohnung zu machen.
+
+
+
+\subsection{Material} % APA: 4.2 Material
+In dem Versuch verwendetes Material: Items, ... 
+
+
+
+\subsection{Versuchsdurchführung} % APA: 4.3 Versuchsdurchführung
+Versuchsdurchführung chronologisch beschreiben! Also Versuchsort, Versuchsablauf: Einverständniserklärung, Experiment, Nachbefragung.
+
+
+
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Ergebnisse}
+Beinhaltet: Erklärung der verwendeten Maße, Deskriptive Darstellung ([1] nennen der Werte (z.B. \textit{M} und \textit{SD}) im Text; [2] Verweis auf Tabellen und Abbildungen zur Veranschaulichung), Statistische Darstellung (Varianzanalyse, t-Tests), gegebenenfalls weitere Auswertung.
+
+
+
+
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Diskussion der Ergebnisse}
+Die Diskussion beinhaltet: Bezug zu den Hypothesen herstellen (bestätigt / nicht bestätigt), Interpretation der Ergebnisse, Auswirkungen dieser Befunde auf weitere Forschung, zugrundeliegende Theorien, auf die "`Realität"', konkrete/spezifische Idee(n) zu Folgeexperimenten (eine detailliertere genügt).
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Fazit}
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% \appendix
+% \section{Rohdaten}
+% \section{Abbildungen}
+% \section{~}
+
+\end{document}
