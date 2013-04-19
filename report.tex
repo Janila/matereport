@@ -8,7 +8,8 @@
 %\usepackage{url}
 %\usepackage{listings}
 \usepackage{longtable} 
-
+\usepackage{multirow} 
+\usepackage{lscape}
 
 
 
@@ -149,8 +150,7 @@ Versuchsdurchführung chronologisch beschreiben! Also Versuchsort, Versuchsablau
 \section{Ergebnisse}
 Beinhaltet: Erklärung der verwendeten Maße, Deskriptive Darstellung ([1] nennen der Werte (z.B. \textit{M} und \textit{SD}) im Text; [2] Verweis auf Tabellen und Abbildungen zur Veranschaulichung), Statistische Darstellung (Varianzanalyse, t-Tests), gegebenenfalls weitere Auswertung.
 
-
-
+Die Rohdaten sind in Abschnitt \ref{sec:Rohdaten}
 
 
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -161,9 +161,52 @@ Die Diskussion beinhaltet: Bezug zu den Hypothesen herstellen (bestätigt / nich
 \section{Fazit}
 
 %+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-% \appendix
-% \section{Rohdaten}
+
+
+\begin{landscape} 
+\appendix
+\section{Rohdaten}\label{sec:Rohdaten}
+
+\begin{longtable}{|l|l||p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|} 
+	\hline
+	Mate Sorte & Gr. & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ sonstiges\\
+	\hline\hline
+  \endhead 
+	\hline
+	Mate Sorte & Gr. & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+	\hline\hline
+  \endfirsthead
+  \multicolumn{7}{c}{\textit{Fortsetzung auf der nächsten Seite}}
+  \endfoot
+  \endlastfoot
+
+ \multirow{5}{*}{BioZisch} & 1 & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+\cline{2-7}
+ & 2 & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+\cline{2-7}
+ & 3 & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+\cline{2-7}
+ & 4 & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+\cline{2-7}
+ & 5 & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+\hline\hline
+
+ \multirow{5}{*}{Buenos} & 1 & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+\cline{2-7}
+ & 2 & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+\cline{2-7}
+ & 3 & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+\cline{2-7}
+ & 4 & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+\cline{2-7}
+ & 5 & süß <--> herb & Sprudeligkeit & Geruch & Geschmack & Gesamturteil/ Sonstiges\\
+\hline\hline
+\end{longtable}
+
+
 % \section{Abbildungen}
 % \section{~}
+\end{landscape}
+
 
 \end{document}
